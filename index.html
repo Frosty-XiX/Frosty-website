@@ -5,16 +5,17 @@
   <title>My Website</title>
   <link rel="stylesheet" href="style.css">
   <style>
-</head>
-<body>
-    <header>
-  <img src="images/logo.png" alt="Logo" class="logo">
-</header>
+    body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       scroll-behavior: smooth;
       background-color: #111;
       color: #f4f4f4;
+    }
+    .logo {
+      width: 100px;
+      display: block;
+      margin: 20px auto;
     }
     nav {
       position: fixed;
@@ -79,6 +80,11 @@
 </head>
 <body>
 
+  <!-- Logo at the top -->
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+  </header>
+
   <nav>
     <a href="#hero">Home</a>
     <a href="#about">About</a>
@@ -118,7 +124,5 @@
     <p>&copy; 2025 FROSTY. All rights reserved.</p>
   </footer>
 
-</body>
-</html>
 </body>
 </html>
