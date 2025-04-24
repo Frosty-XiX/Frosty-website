@@ -1,97 +1,40 @@
-/* Reset some default spacing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Styling */
+/* Apply a new font and background + text colors */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f1fdf3;
-  color: #333;
-  line-height: 1.7;
-  padding: 0 20px 50px;
-}
-
-/* Header Section */
-header {
-  background: linear-gradient(90deg, #007b5e, #00a87d);
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
-  border-bottom: 5px solid #00a87d;
-}
-
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2em;
-  opacity: 0.9;
-}
-
-/* Section Styling */
-section {
-  background: white;
-  margin: 30px auto;
-  padding: 30px;
-  max-width: 960px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-  transition: transform 0.3s ease;
-}
-
-section:hover {
-  transform: translateY(-5px);
+    font-family: 'Poppins', sans-serif; /* You can change this to any Google Font */
+    background-color: #1a1a2e; /* Dark bluish background */
+    color: #e0e0e0; /* Light grey text */
+    margin: 0;
+    padding: 0;
 }
 
 /* Headings */
-h2 {
-  color: #007b5e;
-  margin-bottom: 15px;
-  font-size: 1.8em;
-}
-
-h3 {
-  margin-top: 20px;
-  color: #00a87d;
-  font-size: 1.3em;
-}
-
-/* List Styling */
-ul, ol {
-  padding-left: 25px;
-  margin-top: 10px;
-}
-
-ul li, ol li {
-  margin-bottom: 10px;
+h1, h2, h3 {
+    color: #00f2ff; /* Bright aqua for headings */
+    font-weight: 600;
 }
 
 /* Links */
 a {
-  color: #007b5e;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
+    color: #ff6f91; /* Pinkish links */
+    text-decoration: none;
 }
 
 a:hover {
-  color: #005f47;
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2em;
-  }
-
-  section {
-    padding: 20px;
-  }
+/* Buttons */
+button {
+    background-color: #00f2ff;
+    color: #1a1a2e;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
 }
+
+button:hover {
+    background-color: #ff6f91;
+    color: white;
 }
