@@ -1,106 +1,97 @@
-/* Reset some basic styles */
+/* Reset some default spacing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
+/* Body Styling */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
-  color: #f5f5f5;
-  line-height: 1.6;
+  background: #f1fdf3;
+  color: #333;
+  line-height: 1.7;
+  padding: 0 20px 50px;
 }
 
-/* Navigation */
-nav {
-  background-color: #1e1e1e;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav a {
-  color: #f5f5f5;
-  text-decoration: none;
-  margin-left: 20px;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #00bcd4;
-}
-
-/* Hero Section */
-#hero {
-  height: 100vh;
-  background: url('your-background-image.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Header Section */
+header {
+  background: linear-gradient(90deg, #007b5e, #00a87d);
+  color: white;
+  padding: 30px 20px;
   text-align: center;
-  padding: 0 20px;
+  border-bottom: 5px solid #00a87d;
 }
 
-#hero h1 {
-  font-size: 3rem;
-  color: #ffffff;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
-#hero p {
-  font-size: 1.2rem;
-  margin-top: 15px;
-  color: #cccccc;
+header p {
+  font-size: 1.2em;
+  opacity: 0.9;
 }
 
 /* Section Styling */
 section {
-  padding: 80px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #00bcd4;
-  border-bottom: 2px solid #00bcd4;
-  display: inline-block;
-}
-
-section p {
-  font-size: 1.1rem;
-  color: #ddd;
-}
-
-/* Footer */
-footer {
-  text-align: center;
+  background: white;
+  margin: 30px auto;
   padding: 30px;
-  background-color: #1e1e1e;
-  color: #aaa;
-  font-size: 0.9rem;
+  max-width: 960px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
 }
 
-/* Buttons (optional) */
-.button {
-  background-color: #00bcd4;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 4px;
-  text-decoration: none;
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Headings */
+h2 {
+  color: #007b5e;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #00a87d;
+  font-size: 1.3em;
+}
+
+/* List Styling */
+ul, ol {
+  padding-left: 25px;
+  margin-top: 10px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #007b5e;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #0097a7;
+a:hover {
+  color: #005f47;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
 }
