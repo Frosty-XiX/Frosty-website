@@ -1,40 +1,77 @@
-/* Apply a new font and background + text colors */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global styles */
 body {
-    font-family: 'Poppins', sans-serif; /* You can change this to any Google Font */
-    background-color: #1a1a2e; /* Dark bluish background */
-    color: #e0e0e0; /* Light grey text */
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #e6f2f0;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-/* Headings */
-h1, h2, h3 {
-    color: #00f2ff; /* Bright aqua for headings */
-    font-weight: 600;
+/* Header styles */
+header {
+  background: #004d40;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+/* Section styles */
+section {
+  background: #ffffff;
+  padding: 25px 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #00695c;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+h3 {
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
 }
 
 /* Links */
 a {
-    color: #ff6f91; /* Pinkish links */
-    text-decoration: none;
+  color: #009688;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Buttons */
-button {
-    background-color: #00f2ff;
-    color: #1a1a2e;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
+/* Emphasis */
+strong {
+  font-weight: 600;
 }
 
-button:hover {
-    background-color: #ff6f91;
-    color: white;
+/* Responsive Design */
+@media (max-width: 600px) {
+  section {
+    margin: 15px 10px;
+  }
 }
